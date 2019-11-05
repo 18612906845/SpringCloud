@@ -1,4 +1,4 @@
-package com.citms.cloudcommon;
+package com.citms.cloud.common;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

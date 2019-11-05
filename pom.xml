@@ -15,6 +15,7 @@
 
     <modules>
         <module>cloud-common</module>
+        <module>cloud-gateway</module>
     </modules>
 
     <dependencyManagement>

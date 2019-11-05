@@ -1,10 +1,10 @@
-package com.citms.cloudcommon;
+package com.citms.cloud.gateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CloudCommonApplicationTests {
+class CloudGatewayApplicationTests {
 
     @Test
     void contextLoads() {
