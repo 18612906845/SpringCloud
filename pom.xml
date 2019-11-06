@@ -19,6 +19,8 @@
         <cloude.gateway.version>0.0.1-SNAPSHOT</cloude.gateway.version>
         <cloude.service.version>0.0.1-SNAPSHOT</cloude.service.version>
         <cloude.demo.version>0.0.1-SNAPSHOT</cloude.demo.version>
+        <cloude.demo.server.version>0.0.1-SNAPSHOT</cloude.demo.server.version>
+        <cloude.demo.client.version>0.0.1-SNAPSHOT</cloude.demo.client.version>
     </properties>
 
     <modules>
@@ -60,6 +62,36 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+    </dependencies>
 
     <build>
         <finalName>${project.name}</finalName>

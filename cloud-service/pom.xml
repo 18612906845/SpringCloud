@@ -16,6 +16,8 @@
 
     <modules>
         <module>cloud-demo</module>
+        <module>cloud-demo-server</module>
+        <module>cloud-demo-client</module>
     </modules>
 
 </project>
