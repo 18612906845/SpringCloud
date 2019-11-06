@@ -11,7 +11,7 @@
 
     <groupId>com.citms</groupId>
     <artifactId>cloud-gateway</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${cloude.gateway.version}</version>
     <name>cloud-gateway</name>
     <packaging>jar</packaging>
 

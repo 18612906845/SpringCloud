@@ -1,0 +1,20 @@
+# 服务器端口
+server:
+  port: 8880
+
+spring:
+  cloud:
+    nacos:
+      # 配置中心
+      config:
+        server-addr: 39.106.8.177:8848
+        file-extension: yml
+  application:
+    name: cloud-demo
+
+#数据源配置
+#spring:
+#  datasource:
+#    url: ${blade.datasource.dev.url}
+#    username: ${blade.datasource.dev.username}
+#    password: ${blade.datasource.dev.password}
