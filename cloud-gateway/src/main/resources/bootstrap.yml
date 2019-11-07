@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 39.106.8.177:8848
+  application:
+    name: cloud-gateway

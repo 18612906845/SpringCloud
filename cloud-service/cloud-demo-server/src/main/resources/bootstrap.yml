@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 39.106.8.177:8848
+      config:
+        server-addr: 39.106.8.177:8848
+        file-extension: yml
+  application:
+    name: cloud-demo-server
