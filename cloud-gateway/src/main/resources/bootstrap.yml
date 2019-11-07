@@ -3,5 +3,21 @@ spring:
     nacos:
       discovery:
         server-addr: 39.106.8.177:8848
+      config:
+        server-addr: 39.106.8.177:8848
+        file-extension: yml
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+      - id: cloud-demo-client
+        uri: lb://cloud-demo-client
+        predicates:
+        - Path=/cloud-demo-client/**
+      - id: cloud-demo-server
+        uri: lb://cloud-demo-server
+        predicates:
+        - Path=/cloud-demo-server/**
   application:
     name: cloud-gateway
