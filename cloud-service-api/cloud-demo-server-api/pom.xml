@@ -2,24 +2,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>cloud-service</artifactId>
+        <artifactId>cloud-service-api</artifactId>
         <groupId>com.citms</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.citms</groupId>
-    <artifactId>cloud-demo</artifactId>
-    <version>${cloude.demo.version}</version>
+    <artifactId>cloud-demo-server-api</artifactId>
+    <version>${cloude.demo.server.version}</version>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
             <groupId>com.citms</groupId>
-            <artifactId>cloud-demo-api</artifactId>
-            <version>${cloude.demo.version}</version>
+            <artifactId>cloud-common</artifactId>
+            <version>${cloude.common.version}</version>
         </dependency>
     </dependencies>
-
 </project>

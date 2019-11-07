@@ -15,7 +15,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>cloud-demo-api</module>
+        <module>cloud-demo-client-api</module>
+        <module>cloud-demo-server-api</module>
     </modules>
 
 </project>

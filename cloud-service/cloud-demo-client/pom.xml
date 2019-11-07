@@ -14,5 +14,12 @@
     <version>${cloude.demo.client.version}</version>
     <packaging>jar</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.citms</groupId>
+            <artifactId>cloud-demo-client-api</artifactId>
+            <version>${cloude.demo.client.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
