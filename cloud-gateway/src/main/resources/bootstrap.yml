@@ -9,15 +9,7 @@ spring:
     gateway:
       discovery:
         locator:
+          # 开启基于服务发现的默认路由规则
           enabled: true
-      routes:
-      - id: cloud-demo-client
-        uri: lb://cloud-demo-client
-        predicates:
-        - Path=/cloud-demo-client/**
-      - id: cloud-demo-server
-        uri: lb://cloud-demo-server
-        predicates:
-        - Path=/cloud-demo-server/**
   application:
     name: cloud-gateway
